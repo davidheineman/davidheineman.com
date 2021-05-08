@@ -1,0 +1,155 @@
+#container {
+    position: fixed;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: 'Niramit', sans-serif;
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    -webkit-user-select: none;
+    overflow: hidden;
+}
+
+@keyframes float {
+    0% {
+        box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+        transform: translatey(0px);
+    }
+    50% {
+        box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+        transform: translatey(-20px);
+    }
+    100% {
+        box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+        transform: translatey(0px);
+    }
+}
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    z-index: 999;
+    position: absolute;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+    padding: 5px 5px;
+    overflow: hidden;
+    transform: translatey(0px);
+    animation: float 6s ease-in-out infinite;
+    width: 500px;
+}
+
+.card img{
+    margin-top:26px;
+}
+
+.title {
+    color: grey;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 32px;
+    color: white;
+    padding: 0px 10px;
+}
+
+.twit:hover {
+    color: #38a1f3;
+    transition: 0.3s;
+}
+
+.insta:hover {
+    color: #c13584;
+    transition: 0.3s;
+}
+
+.fb:hover {
+    color: #7289dc;
+    transition: 0.3s;
+}
+
+.git:hover {
+    color: #6f42c1;
+    transition: 0.3s;
+}
+
+.medium:hover {
+    color: #24292e;
+    transition: 0.3s;
+}
+
+.in:hover {
+    color: #0077B5;
+    transition: 0.3s;
+}
+
+.be:hover {
+    color: #053eff;
+    transition: 0.3s;
+}
+
+footer {
+    padding-bottom: 20px;
+    position: absolute;
+    bottom: 0;
+}
+
+.button {
+    border: 2px solid #ffb400;
+    background-color: #FFF;
+    font-weight: 400;
+    color: #000;
+    font-size: 16px;
+    font-family: 'Niramit', sans-serif;
+    margin: 15px 0 15px 0;
+    padding: 5px 15px;
+    display: inline-block;
+    letter-spacing: 1px;
+    transition-duration: .2s;
+    -moz-transition-duration: .2s;
+    -webkit-transition-duration: .2s;
+    -o-transition-duration: .2s;
+}
+
+.button:hover {
+    border: 2px solid #ffb400;
+    background-color: #ffb400;
+    color: #fff;
+}
+
+.rose{
+    opacity:0.1;
+    position: absolute;
+}
+
+@media only screen and (max-width: 1095px) {
+    footer {
+        padding-top: 50px;
+        position: absolute;
+        bottom: 0;
+    }
+}
