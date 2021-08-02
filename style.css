@@ -62,7 +62,10 @@ body {
 }
 
 .card img{
+    width: 230px;
     margin-top:26px;
+    object-fit: cover;
+    object-position: center center;
 }
 
 .title {

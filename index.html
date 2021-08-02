@@ -10,18 +10,22 @@
     <link rel="icon" type="image/gif/ico" href="rose.svg">
 </head>
 <div id="container" touch-action="none"></div>
-<div class="content"> <img class="rose" src="rose.svg" max-height="2000px">
-    <div class="card"> <img src="background2.png" height="230px">
+<div class="content"> 
+    <div class="card"> 
+      <img src="david.jpg" height="230px">
         <h1>David Heineman</h1>
-        <p class="title">Freelance Developer</p> <a href="Resume.pdf" class="button">Read the Resume</a> <br>
+        <p class="title">Freelance Developer</p> 
+          <a href="resume.pdf" class="button">Resume</a> <br>
         <p></p>
     </div>
-    <footer> <a href="https://twitter.com/beyourheineman"><i class="fab fa-twitter twit"></i></a> <a
-            href="http://instagram.com/david.heineman"><i class="fab fa-instagram instam insta"></i></a> <a
-            href="https://www.facebook.com/profile.php?id=100011103845284"><i class="fab fa-facebook-f fb"></i></a> <a
-            href="https://github.com/davidheineman"><i class="fab fa-github git"></i></a> <a
-            href="https://medium.com/@heineman.dj"><i class="fab fa-medium-m medium"></i></a> <a
-            href="https://www.behance.net/bobcrables"><i class="fab fa-behance be"></i></a> </footer>
+    <footer>
+      <a href="https://twitter.com/beyourheineman"><i class="fab fa-twitter twit"></i></a>
+      <a href="http://instagram.com/david.heineman"><i class="fab fa-instagram instam insta"></i></a> 
+      <a href="https://www.facebook.com/profile.php?id=100011103845284"><i class="fab fa-facebook-f fb"></i></a> 
+      <a href="https://github.com/davidheineman"><i class="fab fa-github git"></i></a> 
+      <a href="https://medium.com/@heineman.dj"><i class="fab fa-medium-m medium"></i></a> 
+      <a href="https://www.behance.net/bobcrables"><i class="fab fa-behance be"></i></a>
+    </footer>
 </div>
 
 
@@ -68,11 +72,6 @@
 
     return ((res/1.7071))*0.85 + n*0.15;
   }
-  
-  
-  
-  
-  
 
   float world(vec3 p) {
     // float n = trigNoise3D(p * .1) * 10. * ( 1. + abs(p.x) * -.02 ); // This adds a sort of upward curve left and right. I tlooks cool, but didn't look right for this.
@@ -128,7 +127,6 @@
     float travelled = 0.;
 
     const float distanceThreshold = .3;
-
 
     // Initializing the scene color to black, and declaring the surface position vector.
     vec3 col = vec3(0);
