@@ -64,6 +64,10 @@ a {
     color: inherit;
 }
 
+.david-red {
+    color: rgb(207, 47, 47);
+}
+
 .section .title {
     font-family: Inter var;
     font-weight: 600;
