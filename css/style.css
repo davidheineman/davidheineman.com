@@ -1,16 +1,9 @@
-@font-face {
-    font-family: ProductSans;
-    src: url(/fonts/ps-regular.ttf);
-}
-
 h2 {
-    font-family: ProductSans;
-    letter-spacing: 0.05rem;
+    letter-spacing: -0.1rem;
 }
 
 h4 {
-    font-family: ProductSans;
-    letter-spacing:  0.05rem;
+    letter-spacing: -0.05rem;
     font-size: 1.6em;
 }
 
@@ -18,9 +11,7 @@ h4 {
     color: rgba(107,114,128,var(--tw-text-opacity));
     --tw-text-opacity: 1;
     letter-spacing: 0.1rem;
-    font-size: 2rem;
-    font-family: ProductSans;
-}
+    font-size: 2rem;}
 
 .header {
     text-transform: uppercase;
@@ -71,9 +62,8 @@ a {
 .section .title {
     font-family: Inter var;
     font-weight: 600;
-    letter-spacing: 0.2rem;
+    letter-spacing: 0.05rem;
     font-size: 2rem;
-    font-family: ProductSans;
     text-transform: uppercase;
 }
 
