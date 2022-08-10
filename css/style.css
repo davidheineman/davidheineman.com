@@ -113,6 +113,11 @@ a {
     margin-bottom: 0.15em;
 }
 
+.modal-green {
+    background-color: #6efdae34;
+    box-shadow: -5px 0px 0px 0px #6efdae;
+}
+
 .modal-yellow {
     background-color: rgba(253, 203, 110, 0.2);
     box-shadow: -5px 0px 0px 0px #fdcb6e;
