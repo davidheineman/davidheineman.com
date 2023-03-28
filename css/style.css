@@ -82,6 +82,9 @@ a {
 .label-blue { box-shadow: inset 0 -0.05em 0 0 #fff, inset 0 -0.35em 0 0 #bae6fd; }
 .label-purple { box-shadow: inset 0 -0.05em 0 0 #fff, inset 0 -0.35em 0 0 #ddbafd; }
 .label-black { box-shadow: inset 0 -0.05em 0 0 #fff, inset 0 -0.35em 0 0 #a5a5a5; }
+.label-twitter { box-shadow: inset 0 -0.05em 0 0 #fff, inset 0 -0.35em 0 0 #aed9f1; }
+.label-linkedin { box-shadow: inset 0 -0.05em 0 0 #fff, inset 0 -0.35em 0 0 #acdaf3; }
+
 
 .footer p {
     font-size: 1.5rem;
@@ -150,4 +153,8 @@ a {
 .reccomendations .columns p {
     margin-bottom: 0;
     font-size: 1.6rem;
+}
+.eq-note {
+    font-size:14px; 
+    margin-top: -15px;
 }
