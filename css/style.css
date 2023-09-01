@@ -84,7 +84,7 @@ a {
 .label-black { box-shadow: inset 0 -0.05em 0 0 #fff, inset 0 -0.35em 0 0 #a5a5a5; }
 .label-twitter { box-shadow: inset 0 -0.05em 0 0 #fff, inset 0 -0.35em 0 0 #aed9f1; }
 .label-linkedin { box-shadow: inset 0 -0.05em 0 0 #fff, inset 0 -0.35em 0 0 #acdaf3; }
-
+.label-hf { box-shadow: inset 0 -0.05em 0 0 #fff, inset 0 -0.35em 0 0 #ffe390; }
 
 .footer p {
     font-size: 1.5rem;
