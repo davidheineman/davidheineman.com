@@ -27,6 +27,11 @@ p {
     /* color: rgba(107,114,128,var(--tw-text-opacity)); */
 }
 
+.about-me p {
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+}
+
 .header {
     margin-top: 4rem
 }
