@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="description" content="I'm a third year at Georgia Tech studying computer science.">
     <meta name="author" content="David Heineman">
-    <link rel='preload' href='fonts/inter/inter.css' as="style" onload="this.rel='stylesheet'">
+    <link rel="preload" href="fonts/inter/Inter-roman.var.woff2?v=3.19" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/inter/Inter-italic.var.woff2?v=3.19" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="fonts/inter/inter.css">
     <link rel='stylesheet' href='css/skeleton.css'>
     <link rel='stylesheet' href='css/normalize.css'>
     <link rel='stylesheet' href='css/style.css'>
@@ -26,7 +28,7 @@
     <div class='row links'>
         <a target="_blank" class='label-red' href="mailto:dheineman3@gatech.edu?subject=hey">email</a> 
         <a target="_blank" class='label-orange' href="/david-heineman-resume.pdf">resume</a>
-        <a target="_blank" class='label-linkedin' href="https://www.linkedin.com/in/david-heineman/">linkedin</a> 
+        <a target="_blank" class='label-linkedin' href="https://www.linkedin.com/in/david-heineman">linkedin</a> 
         <a target="_blank" class='label-black' href="https://github.com/davidheineman">github</a> 
         <a target="_blank" class='label-hf' href="https://huggingface.co/davidheineman">huggingface</a> 
         <a target="_blank" class='label-twitter' href="https://twitter.com/heinemandavidj">twitter</a> 
@@ -39,28 +41,28 @@
                 I grew up in Marietta, Georgia and now live a half-hour down in Midtown Atlanta where I'm currently in my final year at Georgia Tech. I thoroughly enjoy reading, hiking, apprasing knives and making homebrew nitrogen cold brew. ☕️ ⛰️
             </p>
             <p>
-                I'm exploring the field of natural language processing with a focus on evaluation, modeling and deployment of constrained text generation models. My research has focused on challenges in text simplification and fine-grained evaluation w.r.t. LLMs.
+                I'm exploring the field of natural language processing with a focus on evaluation, modeling and deployment of constrained text generation models. My research has focused on challenges in text simplification and fine-grained evaluation of LLMs.
             </p>
-            <p>
+            <!-- <p>
                 Professionally, I've built open-source LLM deployments at AWS, deployed ML infrastructure for healthcare at the Atlanta-based startup Pateintco and have served as a teaching assistant for upper-level algorithms and NLP at Georgia Tech.
-            </p>
+            </p> -->
         </div>
     </div>
     <div class='section'>
         <hr>
         <h5 class='title'>Publications & Preprints ✒️</h6>
-        <p>
-            <a class="label-green" href="https://arxiv.org/abs/2308.06953">Thresh 🌾: A Unified, Customizable and Deployable Platform for Fine-Grained Text Evaluation</a> <b>[</b><a class='label-black' href="https://thresh.tools">thresh.tools</a><b>]</b> <br />
+        <p class='pub'>
+            <a class="label-green" href="https://aclanthology.org/2023.emnlp-demo.30">Thresh 🌾: A Unified, Customizable and Deployable Platform for Fine-Grained Text Evaluation</a> <b>[</b><a class='label-black' href="https://thresh.tools">thresh.tools</a><b>]</b> <br />
             <b>David Heineman</b>, Yao Dou, Wei Xu <br />
             EMNLP Demo, 2023
         </p>
-        <p>
-            <a class="label-red" href="https://arxiv.org/abs/2305.14458">Dancing Between Success and Failure: Edit-level Simplification Evaluation using SALSA 💃</a> <b>[</b><a class='label-black' href="https://github.com/davidheineman/salsa">code/data</a><b>]</b> <br />
+        <p class='pub'>
+            <a class="label-red" href="https://aclanthology.org/2023.emnlp-main.211">Dancing Between Success and Failure: Edit-level Simplification Evaluation using SALSA 💃</a> <b>[</b><a class='label-black' href="https://github.com/davidheineman/salsa">code/data</a><b>]</b> <br />
             <b>David Heineman</b>, Yao Dou, Mounica Maddela, Wei Xu <br />
             EMNLP, 2023
         </p>
-        <p>
-            <a class="label-blue" href="https://arxiv.org/abs/2212.09739">LENS 🔎: A Learnable Evaluation Metric for Text Simplification</a> <br />
+        <p class='pub'>
+            <a class="label-blue" href="https://aclanthology.org/2023.acl-long.905">LENS 🔎: A Learnable Evaluation Metric for Text Simplification</a> <br />
             Mounica Maddela*, Yao Dou*, <b>David Heineman</b>, Wei Xu <br />
             ACL, 2023
         </p>
@@ -97,7 +99,7 @@
     <div class='section reccomendations'>
         <hr>
         <h5 class='title'>My recommendations</h6>
-        <p class='tagline'>Wanted to add some personal flair</p>
+        <p class='tagline'>Wanted to add some personal flair. I've also been trying a few <a class="label-brown" href="https://www.google.com/maps/d/viewer?mid=1c7utlkztSv79liDa7mCsQIDEZdY_4JY&hl=en&usp=sharing">coffee shops</a> in Atlanta.</p>
         <div class="row">
             <div class="three columns">
                 <p><strong>Watching...</strong></p>
@@ -112,7 +114,7 @@
             <div class="three columns">
                 <p><strong>Listening to...</strong></p>
                 <br>
-                <p>Planet Money by NPR</p>
+                <p><a class="label-planet-money" href="https://www.npr.org/sections/money">Planet Money</a> by NPR</p>
                 <p>Wallows</p>
                 <p>Hobo Johnson</p>
                 <p>PARTYNEXTDOOR</p>
@@ -162,6 +164,6 @@
     </div>
     <div class='section footer'>
         <hr>
-        <p>David Heineman<br>Last updated October 2023 (<a class='label-black' href='https://github.com/davidheineman/davidheineman.com'>view source</a>)</p>
+        <p>David Heineman<br>Last updated December 2023 (<a class='label-black' href='https://github.com/davidheineman/davidheineman.com'>view source</a>)</p>
     </div>
 </div>

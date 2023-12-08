@@ -8,10 +8,11 @@ h4 {
 }
 
 .header h5 {
-    color: rgba(107,114,128,var(--tw-text-opacity));
+    color: rgba(107, 114, 128, var(--tw-text-opacity));
     --tw-text-opacity: 1;
     letter-spacing: 0.1rem;
-    font-size: 2rem;}
+    font-size: 2rem;
+}
 
 .header {
     text-transform: uppercase;
@@ -46,15 +47,16 @@ p {
 }
 
 .tagline strong {
-    font-weight: 600; /* PROBLEM */
+    font-weight: 600;
+    /* PROBLEM */
 }
-  
+
 a {
     color: inherit;
     text-decoration: inherit;
     font-weight: 600;
     --tw-text-opacity: 1;
-    color: rgba(2,132,199,var(--tw-text-opacity));
+    color: rgba(2, 132, 199, var(--tw-text-opacity));
     box-sizing: border-box;
     border: 0 solid;
     color: inherit;
@@ -90,6 +92,8 @@ a {
 .label-twitter { box-shadow: inset 0 -0.05em 0 0 #fff, inset 0 -0.35em 0 0 #aed9f1; }
 .label-linkedin { box-shadow: inset 0 -0.05em 0 0 #fff, inset 0 -0.35em 0 0 #acdaf3; }
 .label-hf { box-shadow: inset 0 -0.05em 0 0 #fff, inset 0 -0.35em 0 0 #ffe390; }
+.label-planet-money { box-shadow: inset 0 -0.05em 0 0 #fff, inset 0 -0.35em 0 0 #b3e9bd; }
+.label-brown { box-shadow: inset 0 -0.05em 0 0 #fff, inset 0 -0.35em 0 0 #d5c0a9; }
 
 .footer p {
     font-size: 1.5rem;
@@ -103,22 +107,21 @@ a {
 
 .arrows {
     list-style: outside none;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding: 0 30px;
     list-style-position: outside;
 }
 
 .arrow {
     display: list-item;
     text-align: -webkit-match-parent;
-    text-indent: -2em;
+    text-indent: -1.2em;
     font-family: Inter var;
     font-weight: 350;
     color: #222;
     font-size: 1.7rem;
-    line-height: 3rem;
+    line-height: 2.6rem;
     --tw-text-opacity: 1;
-    margin-bottom: 0.15em;
+    margin-bottom: 0.5em;
 }
 
 .modal-green {
@@ -151,15 +154,28 @@ a {
 .reccomendations .tagline {
     font-size: 1.75rem;
 }
+
 .reccomendations strong {
     text-transform: uppercase;
     font-size: 1.7rem;
 }
+
 .reccomendations .columns p {
     margin-bottom: 0;
     font-size: 1.6rem;
 }
+
+.reccomendations .columns p:first-child {
+    margin-bottom: -1.2em;
+}  
+
 .eq-note {
-    font-size:14px; 
+    font-size: 14px;
     margin-top: -15px;
+}
+
+.pub {
+    font-size: 1.7rem;
+    line-height: 1.5em;
+    margin-bottom: 1em
 }
