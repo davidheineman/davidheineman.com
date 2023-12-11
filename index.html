@@ -15,13 +15,22 @@
 </head>
 
 <div class='container'>
-    <div class='header'>
-        <h5>David Heineman</h5>
+    <div class="header-row">
+        <div class="profile">
+            <a href="https://www.cs.toronto.edu/~kriz/cifar.html" target="_blank">
+                <div id="profile-img-container" class="profile-img-container">
+                    <div id="profile-img" class="profile-img"></div>
+                </div>
+            </a>
+        </div>
+        <div class="top-desc">
+            <h5 class="header">David Heineman</h5>
+            <h2 class='name'><strong>Hey! I'm <span class='david-red'>David</span> 👋</h2></strong>
+            <h4 class='tagline'>
+                <strong>I'm a fourth year at <span class='tech-yellow'>Georgia Tech</span> studying <span class='blue'>computer science</span>. I work on intelligent systems, language and information networks.</strong>
+            </h4>
+        </div>
     </div>
-    <h2 class='name'><strong>Hey! I'm <span class='david-red'>David</span> 👋</h2></strong>
-    <h4 class='tagline'>
-        <strong>I'm a fourth year at <span class='tech-yellow'>Georgia Tech</span> studying <span class='blue'>computer science</span>. I work on intelligent systems, language and information networks.</strong>
-    </h4>
     <div class='modal modal-green'>
         <p>🍂 <strong>This fall I am </strong> applying to graduate school, finishing my undergraduate thesis ✍️ and helping lead <a class="label-purple" href="https://aritter.github.io/CS-4650-au23/">NLP (CS 4650)</a> as a teaching assistant.</p>
     </div>
@@ -74,9 +83,7 @@
         <ul class='arrows'>
             <li class='arrow'>Building the <a class="label-green" href="https://thresh.tools">Thresh 🌾</a> platform, a multi-tool for fine-grained generation evaluation projects, including an <a href="https://github.com/davidheineman/thresh">annotation tool builder</a> and integrated <a href="https://pypi.org/project/thresh/">Python library</a>.</li>
             <li class='arrow'>Under the <a class="label-yellow" href="https://undergradresearch.gatech.edu/content/presidents-undergraduate-research-awards">PURA research award</a>, working on open problems in generation & evaluation (check out my new Huggingface <a class="label-orange" href="https://github.com/davidheineman/decoding-vizualizer">decoding vizualizer extension</a>). I'm very fortunate to be advised by <a class="label-red" href="https://cocoxu.github.io/">Prof. Wei Xu</a> and to have worked with <a href="https://yao-dou.github.io/">Yao Dou</a> and <a href="https://mounicam.github.io/">Dr. Mounica Maddela</a>.</li>
-            <!-- diffusion models for natural language to create more robust -->
             <li class='arrow'>Reading up on cognitive science and question answering! Here's some of <a class="label-purple" href="https://davidheineman.com/reasoning-evaluation.pdf">my thoughts on evaluating reasoning</a> in LLMs.</li>
-            <!-- <li class='arrow'>Leading a project as first author alongside <a class="label-purple" href="https://yao-dou.github.io/">Yao Dou</a> and <a class="label-purple" href="https://mounicam.github.io/">Mounica Maddela</a> on fine-grained text simplification human evaluation. This work is currently under review.</li> -->
         </ul>
     </div>
 
@@ -167,3 +174,24 @@
         <p>David Heineman<br>Last updated December 2023 (<a class='label-black' href='https://github.com/davidheineman/davidheineman.com'>view source</a>)</p>
     </div>
 </div>
+
+<script>
+    const zoomImage = document.getElementById("profile-img");
+    const zoomImageContainer = document.getElementById("profile-img-container");
+
+    function handleMouseMove(e) {
+        const { layerX, layerY } = e;
+        const { width, height } = zoomImageContainer.getBoundingClientRect();
+        const x = 100 * (width / 2 - layerX) / width;
+        const y = 100 * (height / 2 - layerY) / height;
+        const scale = 25;
+        zoomImage.style.transform = `scale(${scale}) translate(${x}%, ${y}%)`;
+    }
+
+    function resetZoom() {
+        zoomImage.style.transform = "scale(1) translate(0%, 0%)";
+    }
+
+    zoomImageContainer.addEventListener("mousemove", handleMouseMove);
+    zoomImage.addEventListener("mouseleave", resetZoom);
+</script>
