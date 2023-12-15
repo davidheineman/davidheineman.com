@@ -17,7 +17,7 @@
 <div class='container'>
     <div class="header-row">
         <div class="profile">
-            <a href="https://www.cs.toronto.edu/~kriz/cifar.html" target="_blank">
+            <a href="https://www.cs.toronto.edu/~kriz/cifar.html">
                 <div id="profile-img-container" class="profile-img-container">
                     <div id="profile-img" class="profile-img"></div>
                 </div>
@@ -35,12 +35,12 @@
         <p>🍂 <strong>This fall I am </strong> applying to graduate school, finishing my undergraduate thesis ✍️ and helping lead <a class="label-purple" href="https://aritter.github.io/CS-4650-au23/">NLP (CS 4650)</a> as a teaching assistant.</p>
     </div>
     <div class='row links'>
-        <a target="_blank" class='label-red' href="mailto:dheineman3@gatech.edu?subject=hey">email</a> 
-        <a target="_blank" class='label-orange' href="/david-heineman-resume.pdf">resume</a>
-        <a target="_blank" class='label-linkedin' href="https://www.linkedin.com/in/david-heineman">linkedin</a> 
-        <a target="_blank" class='label-black' href="https://github.com/davidheineman">github</a> 
-        <a target="_blank" class='label-hf' href="https://huggingface.co/davidheineman">huggingface</a> 
-        <a target="_blank" class='label-twitter' href="https://twitter.com/heinemandavidj">twitter</a> 
+        <a class='label-red' href="mailto:dheineman3@gatech.edu?subject=hey">email</a> 
+        <a class='label-orange' href="/david-heineman-resume.pdf">resume</a>
+        <a class='label-linkedin' href="https://www.linkedin.com/in/david-heineman">linkedin</a> 
+        <a class='label-black' href="https://github.com/davidheineman">github</a> 
+        <a class='label-hf' href="https://huggingface.co/davidheineman">huggingface</a> 
+        <a class='label-twitter' href="https://twitter.com/heinemandavidj">twitter</a> 
     </div>
     <div class='section'>
         <hr>
@@ -134,7 +134,7 @@
                 <p>Immanuel Kant</p>
                 <p>John Snow</p>
                 <p>Maya Angelou</p>
-                <p>William Wordsworth</p>
+                <p><a class='label-blue' href="https://www.cs.virginia.edu/~robins/YouAndYourResearch.html">Richard Hamming</a></p>
                 <p>Blaise Pascal</p>
                 <br>
             </div>
@@ -194,4 +194,6 @@
 
     zoomImageContainer.addEventListener("mousemove", handleMouseMove);
     zoomImage.addEventListener("mouseleave", resetZoom);
+
+    document.querySelectorAll('a').forEach(link => link.setAttribute('target', '_blank'));
 </script>
