@@ -1,0 +1,279 @@
+@font-face {
+    font-family: 'Inter var';
+    font-weight: 100 900;
+    font-display: swap;
+    font-style: normal;
+    font-named-instance: 'Regular';
+    src: url("../fonts/inter-roman.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: 'Inter var';
+    font-weight: 100 900;
+    font-display: swap;
+    font-style: italic;
+    font-named-instance: 'Italic';
+    src: url("../fonts/inter-italic.woff2") format("woff2");
+}
+
+h2 {
+    letter-spacing: -0.1rem;
+}
+
+h4 {
+    letter-spacing: -0.05rem;
+    font-size: 1.6em;
+}
+
+p {
+    font-family: Inter var;
+    font-weight: 350;
+    color: #222;
+    font-size: 1.8rem;
+    line-height: 3rem;
+    --tw-text-opacity: 1;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+    font-weight: 600;
+    --tw-text-opacity: 1;
+    color: rgba(2, 132, 199, var(--tw-text-opacity));
+    box-sizing: border-box;
+    border: 0 solid;
+    color: inherit;
+}
+
+.header {
+    color: rgba(107, 114, 128, var(--tw-text-opacity));
+    --tw-text-opacity: 1;
+    letter-spacing: 0.1rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    line-height: 1.3;
+}
+
+.about-me p {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+}
+
+.header-row {
+    margin-top: 4rem
+}
+
+.links {
+    font-size: 2.2rem;
+}
+
+.links a {
+    margin-right: 2rem;
+}
+
+.tagline strong {
+    font-weight: 600;
+}
+
+.section .title {
+    font-family: Inter var;
+    font-weight: 600;
+    letter-spacing: 0.05rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.links a { color: #2E2D29; }
+.tech-yellow { color: #ab7c00; }
+.stanford { color: #B83A4B; }
+.blue { color: #607bff; }
+.david-red { color: #e1697d; }
+.david-green { color: #4bcb9e; }
+.grey { color: #838383 }
+
+.label-red { box-shadow: inset 0 -0.05em 0 0 #fff, inset 0 -0.35em 0 0 #fdbacd; }
+.label-orange { box-shadow: inset 0 -0.05em 0 0 #fff, inset 0 -0.35em 0 0 #fdd5ba; }
+.label-yellow { box-shadow: inset 0 -0.05em 0 0 #fff, inset 0 -0.35em 0 0 #fdfcba; }
+.label-green { box-shadow: inset 0 -0.05em 0 0 #fff, inset 0 -0.35em 0 0 #bafdc3; }
+.label-blue { box-shadow: inset 0 -0.05em 0 0 #fff, inset 0 -0.35em 0 0 #bae6fd; }
+.label-purple { box-shadow: inset 0 -0.05em 0 0 #fff, inset 0 -0.35em 0 0 #ddbafd; }
+.label-brown { box-shadow: inset 0 -0.05em 0 0 #fff, inset 0 -0.35em 0 0 #d5c0a9; }
+.label-black { box-shadow: inset 0 -0.05em 0 0 #fff, inset 0 -0.35em 0 0 #c4c4c4; }
+.label-twitter { box-shadow: inset 0 -0.05em 0 0 #fff, inset 0 -0.35em 0 0 #aed9f1; }
+.label-linkedin { box-shadow: inset 0 -0.05em 0 0 #fff, inset 0 -0.35em 0 0 #acdaf3; }
+.label-hf { box-shadow: inset 0 -0.05em 0 0 #fff, inset 0 -0.35em 0 0 #ffe390; }
+.label-gt { box-shadow: inset 0 -0.05em 0 0 #fff, inset 0 -0.35em 0 0 #f9e7a9; }
+.label-ef { box-shadow: inset 0 -0.05em 0 0 #fff, inset 0 -0.35em 0 0 #d8bcfa; }
+.label-stanford { box-shadow: inset 0 -0.05em 0 0 #fff, inset 0 -0.35em 0 0 hsl(352, 65%, 82%); }
+.label-geb { box-shadow: inset 0 -0.05em 0 0 #fff, inset 0 -0.35em 0 0 #fbcbb1; }
+.label-planet-money { box-shadow: inset 0 -0.05em 0 0 #fff, inset 0 -0.35em 0 0 #b3e9bd; }
+.label-multi-prompt { box-shadow: inset 0 -0.05em 0 0 #fff, inset 0 -0.35em 0 0 #c5c5ff; }
+
+.footer p {
+    font-size: 1.3rem;
+    line-height: 2rem;
+    letter-spacing: -0.04rem;
+}
+
+.arrows li:before {
+    content: "→ ";
+}
+
+.arrows {
+    list-style: outside none;
+    padding: 0 30px;
+    list-style-position: outside;
+}
+
+.arrow {
+    display: list-item;
+    text-align: -webkit-match-parent;
+    text-indent: -1.2em;
+    font-family: Inter var;
+    font-weight: 350;
+    color: #222;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    --tw-text-opacity: 1;
+    margin-bottom: 0.8em;
+}
+
+.modal {
+    padding-left: 20px;
+    margin-bottom: 20px;
+    padding-right: 10px;
+}
+
+.modal p {
+    letter-spacing: -0.02rem;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    line-height: 2.8rem;
+}
+
+.modal-green {
+    background-color: #6efdae34;
+    box-shadow: -5px 0px 0px 0px #6efdae;
+}
+
+.modal-yellow {
+    background-color: rgba(253, 203, 110, 0.2);
+    box-shadow: -5px 0px 0px 0px #fdcb6e;
+}
+
+.modal-red {
+    background-color: rgba(253, 110, 110, 0.2);
+    box-shadow: -5px 0px 0px 0px #fd6e6e;
+}
+
+.reccomendations .row p {
+    line-height: 1.7em;
+}
+
+.reccomendations .tagline {
+    font-size: 1.6rem;
+}
+
+.reccomendations strong {
+    text-transform: uppercase;
+    font-size: 1.6rem;
+}
+
+.reccomendations .columns p {
+    margin-bottom: 0;
+    font-size: 1.5rem;
+}
+
+.reccomendations .columns p:first-child {
+    margin-bottom: -1.2em;
+}
+
+.eq-note {
+    font-size: 14px;
+    margin-top: 0px;
+    margin-bottom: -5px;
+}
+
+.author {
+    font-size: 1.6rem;
+    line-height: 1.3em;
+    margin-bottom: -0.4em;
+}
+
+.pub {
+    font-size: 1.7rem;
+    line-height: 1.4em;
+    margin-bottom: 0.2em;
+}
+
+.header-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.top-desc h5,
+.top-desc h2 {
+    margin-bottom: 1rem;
+}
+
+.top-desc {
+    flex: 1;
+}
+
+.profile {
+    flex: 0 0 200px;
+    /* margin-left: 2rem; */
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 885px) {
+    .profile {
+        display: none;
+    }
+}
+
+.profile-img-container {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+
+.profile-img {
+    background-image: url(../img/david.jpg);
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transition: -ms-transform .5s ease;
+    transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
+    -webkit-transition: -webkit-transform .5s ease;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    border-top-color: #2E2D29;
+    animation: spin 1.1s linear infinite;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+@keyframes spin {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}

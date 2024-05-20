@@ -3,87 +3,92 @@
 <head>
     <title>David Heineman</title>
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'>
-    <meta name='description' content='Computer science student at Georgia Tech.'>
+    <meta name='description' content='MS CS @ Stanford'>
     <meta name='author' content='David Heineman'>
-    <link rel='preload' href='fonts/inter/Inter-roman.var.woff2?v=3.19' as='font' type='font/woff2' crossorigin>
-    <link rel='preload' href='fonts/inter/Inter-italic.var.woff2?v=3.19' as='font' type='font/woff2' crossorigin>
-    <link rel='stylesheet' href='fonts/inter/inter.css'>
+    <link rel='preload' href='fonts/inter-roman.woff2' as='font' type='font/woff2' crossorigin>
+    <link rel='preload' href='fonts/inter-italic.woff2' as='font' type='font/woff2' crossorigin>
     <link rel='stylesheet' href='css/skeleton.css'>
     <link rel='stylesheet' href='css/normalize.css'>
-    <link rel='stylesheet' href='css/style.css'>
+    <link rel='stylesheet' href='css/main.css'>
     <link rel='icon' type='image/png' href='img/favicon.png'>
 </head>
 
 <div class='container'>
     <div class='header-row'>
-        <div class='profile'>
+        <div class='profile' id='profile'>
             <a href='https://www.cs.toronto.edu/~kriz/cifar.html'>
                 <div id='profile-img-container' class='profile-img-container'>
+                    <div id='spinner' class='spinner'></div>
                     <div id='profile-img' class='profile-img'></div>
                 </div>
             </a>
         </div>
         <div class='top-desc'>
-            <h5 class='header'>David Heineman</h5>
+            <h5 class='header'>tldr: curl https://davidheineman.com</h5>
             <h2 class='name'><strong>Hey! I'm <span class='david-red'>David</span> 👋</h2></strong>
             <h4 class='tagline'>
-                <strong>I'm a fourth year at <span class='tech-yellow'>Georgia Tech</span> studying <span class='blue'>computer science</span>. I work on intelligent systems, language and information networks.</strong>
+                <strong>
+                    I'm an incoming MS student at <span class='stanford'>Stanford</span> studying <span class='blue'>computer science</span>. 
+                    I work on intelligent systems, language and information networks.
+                </strong>
             </h4>
         </div>
     </div>
     <div class='modal modal-green'>
-        <p>🌸 <strong>This spring I am </strong> completing my final undergrad semester, getting to know the <a class='label-gt' href='https://startup.exchange/about'>GT startup community</a> and spending a little free time learning <a class='label-blue' href='https://web.stanford.edu/~boyd/cvxbook'>convex optimization</a>!</p>
+        <p>🌤️ <strong>This summer I am </strong> at the startup accelerator <a class='label-ef' href='https://joinef.com/'>Entrepreneur First</a> working on new tools for LLM evaluation and will be starting my Master's this fall! 🌲</p>
     </div>
     <div class='row links'>
-        <a class='label-red' href='mailto:dheineman3@gatech.edu?subject=hey'>email</a> 
+        <a class='label-red' href='mailto:dhei@stanford.edu?subject=hey'>email</a> 
         <a class='label-orange' href='/david-heineman-resume.pdf'>resume</a>
-        <a class='label-linkedin' href='https://linkedin.com/in/david-heineman'>linkedin</a> 
+        <a class='label-linkedin' href='https://linkedin.com/in/davidheineman'>linkedin</a> 
         <a class='label-black' href='https://github.com/davidheineman'>github</a> 
         <a class='label-hf' href='https://huggingface.co/davidheineman'>huggingface</a> 
         <a class='label-twitter' href='https://twitter.com/heinemandavidj'>twitter</a> 
     </div>
     <div class='section'>
         <hr>
-        <h5 class='title'>More about me</h5>
+        <h5 class='title'>About me</h5>
         <div class='about-me'>
             <p>
-                I grew up in Marietta, Georgia and now live a half-hour down in Midtown Atlanta where I'm currently in my final year at Georgia Tech. I thoroughly enjoy reading, hiking, and making homebrew nitrogen cold brew. ☕️ ⛰️
+                I grew up in Marietta, Georgia, where I recently completed my undergrad about half-an-hour south at Georgia Tech 🐝 and now live in the bay area. I was previously at <a class="label-orange" href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/cloudwatch-application-insights">AWS</a> and <a class="label-green" href="https://info.waystar.com/Patientco-Acquisition.html">Patientco</a>, a healthcare / fintech startup. I enjoy reading, hiking, and making homebrew nitrogen cold brew. ☕️ ⛰️
             </p>
             <p>
-                I'm exploring the field of natural language processing with a focus on evaluation, modeling and deployment of constrained text generation models. My research has focused on challenges in text simplification and fine-grained evaluation of LLMs. With new analytical tools and existing theories of cognition, I hope to build a rigorous top-down understanding of LLM behavior. 🛠️
+                I'm currently working on evaluation, modeling and deployment of text generation models. Specifically, I've focused on fine-grained evaluation of LLMs and using new quality metrics to improve generation. My aim is to build a rigorous, top-down understanding of LLM behavior by incorporating existing theories of cognition with new analytical tools <b>[</b><a class='label-black' href='/sop.pdf'>...</a><b>]</b>
             </p>
-            <!-- <p>
-                Professionally, I've built open-source LLM deployments at AWS, deployed ML infrastructure for healthcare at the Atlanta-based startup Pateintco and have served as a teaching assistant for upper-level algorithms and NLP at Georgia Tech.
-            </p> -->
         </div>
     </div>
     <div class='section'>
         <hr>
         <h5 class='title'>Publications & Preprints ✒️</h6>
+        <!-- <p class='pub'>
+            <a class='label-multi-prompt' href='.'>Improving Minimum Bayes Risk Decoding with Multi-Prompt</a> <b>[</b><a class='label-black' href='https://github.com/davidheineman/multi-prompt'>code</a><b>]</b> <br />
+            <p class='author'><b>David Heineman</b>, Yao Dou, Wei Xu <br /> preprint, 2024</p>
+        </p> -->
         <p class='pub'>
-            <a class='label-green' href='https://aclanthology.org/2023.emnlp-demo.30'>Thresh 🌾: A Unified, Customizable and Deployable Platform for Fine-Grained Text Evaluation</a> <b>[</b><a class='label-black' href='https://thresh.tools'>thresh.tools</a><b>]</b> <br />
-            <b>David Heineman</b>, Yao Dou, Wei Xu <br />
-            EMNLP Demo, 2023
+            <a class='label-orange' href='https://arxiv.org/abs/2405.06714'>Towards a Path Dependent Account of Category Fluency</a> <b>[</b><a class='label-black' href='https://github.com/davidheineman/category-fluency'>code</a><b>]</b> <br />
+            <p class='author'><b>David Heineman</b>, Reba Koenen, Sashank Varma <br /> CogSci, 2024</p>
         </p>
         <p class='pub'>
-            <a class='label-red' href='https://aclanthology.org/2023.emnlp-main.211'>Dancing Between Success and Failure: Edit-level Simplification Evaluation using SALSA 💃</a> <b>[</b><a class='label-black' href='https://github.com/davidheineman/salsa'>code/data</a><b>]</b> <br />
-            <b>David Heineman</b>, Yao Dou, Mounica Maddela, Wei Xu <br />
-            EMNLP, 2023
+            <a class='label-green' href='https://aclanthology.org/2023.emnlp-demo.30'>Thresh 🌾: Unified, Customizable and Deployable Fine-Grained Text Evaluation</a> <b>[</b><a class='label-black' href='https://thresh.tools'>thresh.tools</a><b>]</b> <br />
+            <p class='author'><b>David Heineman</b>, Yao Dou, Wei Xu <br /> EMNLP Demo, 2023</p>
+        </p>
+        <p class='pub'>
+            <a class='label-red' href='https://aclanthology.org/2023.emnlp-main.211'>Edit-level Simplification Evaluation using SALSA 💃</a> <b>[</b><a class='label-black' href='https://github.com/davidheineman/salsa'>code/data</a>, <a class='label-black' href='https://huggingface.co/davidheineman/lens-salsa'>metric</a><b>]</b> <br />
+            <p class='author'><b>David Heineman</b>, Yao Dou, Mounica Maddela, Wei Xu <br /> EMNLP, 2023</p>
         </p>
         <p class='pub'>
             <a class='label-blue' href='https://aclanthology.org/2023.acl-long.905'>LENS 🔎: A Learnable Evaluation Metric for Text Simplification</a> <br />
-            Mounica Maddela*, Yao Dou*, <b>David Heineman</b>, Wei Xu <br />
-            ACL, 2023
+            <p class='author'>Mounica Maddela*, Yao Dou*, <b>David Heineman</b>, Wei Xu <br /> ACL, 2023</p>
         </p>
-        <p class='eq-note'><i>* = equal contribution</i></p>
+        <p class='eq-note grey'><i>* = equal contribution</i></p>
     </div>
     <div class='section'>
         <hr>
         <h5 class='title'>What I've been building 👷</h6>
         <ul class='arrows'>
-            <li class='arrow'>Building the <a class='label-green' href='https://thresh.tools'>Thresh 🌾</a> platform, a multi-tool for fine-grained generation evaluation projects, including an <a href='https://github.com/davidheineman/thresh'>annotation tool builder</a> and integrated <a href='https://pypi.org/project/thresh/'>Python library</a>.</li>
-            <li class='arrow'>Under the <a class='label-yellow' href='https://undergradresearch.gatech.edu/content/presidents-undergraduate-research-awards'>PURA research award</a>, working on open problems in generation & evaluation (check out my new Huggingface <a class='label-orange' href='https://github.com/davidheineman/decoding-vizualizer'>decoding vizualizer extension</a>). I'm very fortunate to be advised by <a class='label-red' href='https://cocoxu.github.io/'>Prof. Wei Xu</a> and to have worked with <a href='https://yao-dou.github.io/'>Yao Dou</a> and <a href='https://mounicam.github.io/'>Dr. Mounica Maddela</a>.</li>
-            <li class='arrow'>Reading up on cognitive science and question answering! Here's some of <a class='label-purple' href='https://davidheineman.com/reasoning-evaluation.pdf'>my thoughts on evaluating reasoning</a> in LLMs.</li>
+            <li class='arrow'>A few ongoing projects: <a class='label-black' href='https://github.com/davidheineman/dl'>pre-training data analysis tools for OLMo</a>, <a class='label-black' href='https://github.com/davidheineman/llama-inference'>easy-to-deploy LLM inference</a>, <a class='label-black' href='https://github.com/davidheineman/mytorch'>a PyTorch re-implementation</a> and <a class='label-black' href='https://huggingface.co/davidheineman/colbert-acl'>a ColBERT retrevial system for ACL papers</a>.</li>
+            <li class='arrow'>Building the <a class='label-green' href='https://thresh.tools'>Thresh 🌾</a> platform, an all-purpose tool for fine-grained text generation evaluation, including an <a href='https://github.com/davidheineman/thresh'>annotation tool builder</a> and integrated <a href='https://pypi.org/project/thresh/'>Python library</a>.</li>
+            <li class='arrow'>Continuing my research with the NLPx lab at Georgia Tech! I'm very fortunate to be advised by <a class='label-red' href='https://cocoxu.github.io/'>Prof. Wei Xu</a> and to work with <a href='https://yao-dou.github.io/'>Yao Dou</a> and <a href='https://mounicam.github.io/'>Dr. Mounica Maddela</a>.</li>
         </ul>
     </div>
 
@@ -91,110 +96,111 @@
         <hr>
         <h5 class='title'>My past work 🌳</h6>
         <ul class='arrows'>
-            <li class='arrow'>Designed new programming assignments for <a class='label-purple' href='https://aritter.github.io/CS-4650-au23'>NLP (CS 4650)</a> as a teaching assistant (incl. sampling algorithms & LLaMA fine-tuning with LoRA!)</li>
+            <li class='arrow'>Awarded the <a class='label-yellow' href='https://www.cc.gatech.edu/annual-awards-and-honors-past-recipients#:~:text=David Heineman'>GT College of Computing Outstanding Undergraduate Research Award</a> (1 of 3000+ CS students) for my undergradaute thesis work on <a href='.'>fine-grained evaluation of LLMs</a>.</li>
+            <li class='arrow'>Designed new programming assignments for <a class='label-purple' href='https://aritter.github.io/CS-4650-au23'>CS 4650, Natural Language Processing</a> as a teaching assistant (sampling algorithms & LLaMA fine-tuning with LoRA).</li>
+            <!-- <li class='arrow'>[MBR]</li> -->
+            <li class='arrow'>Built an air pollution <a class='label-green' href='https://epdglow.com'>complaint tracker and classifier</a> <b>[</b><a class='label-black' href='https://github.com/davidheineman/epa'>code</a><b>]</b> for the Georgia Environmental Protection Divison (part of a larger collaboration at GT).</li>
+            <li class='arrow'>Awarded the <a class='label-yellow' href='https://undergradresearch.gatech.edu/content/presidents-undergraduate-research-awards'>PURA research grant</a> to work on open problems in generation & evaluation (check out my Huggingface <a class='label-orange' href='https://github.com/davidheineman/decoding-vizualizer'>decoding vizualizer extension</a>).</li>
+            <li class='arrow'>Thoughts on <a class='label-red' href='https://davidheineman.com/reasoning-evaluation.pdf'>re-framing reasoning evaluation in LLMs</a> using theories of human cognition.</li>
+            <li class='arrow'>Integrated the <a class='label-yellow' href="https://huggingface.co/davidheineman/lens">LENS</a> and <a class='label-yellow' href="https://huggingface.co/davidheineman/lens-salsa">LENS-SALSA</a> models and PyPi library with HuggingFace to let anyone evaluate text simplification with LLMs in 5 lines of Python <b>[</b><a class='label-black' href='https://colab.research.google.com/drive/1rIYrbl5xzL5b5sGUQ6zFBfwlkyIDg12O?usp=sharing'>demo</a><b>]</b>.</li>
+            <!-- <li class='arrow'>[SALSA]</li> -->
             <li class='arrow'>Interned in <a class='label-orange' href='https://aws.amazon.com/ec2'>AWS EC2 Enterprise Services</a>, developing a prototype language model service, addressing problems in inference cost and deployment of open-source LLMs.</li>
             <li class='arrow'>Designed the first <a class='label-blue' href='https://github.com/davidheineman/edit-type-annotator'>rate-and-rank</a> human evaluation framework for text generation as co-author of the <a class='label-green' href='https://arxiv.org/abs/2212.09739'>LENS</a> project.</li>
-            <li class='arrow'>Earned 4th place in <a class='label-yellow' href='https://wreckctf.com/'>Georgia Tech's Wrek CTF</a> (one of the largest greyhat hackathons in the south). See my answers <a class='label-red' href='https://github.com/davidheineman/wrek-ctf-2022'>here</a>.</li>
+            <li class='arrow'>Earned 4th place in <a class='label-yellow' href='https://wreckctf.com/'>Georgia Tech's Wrek CTF</a> (one of the largest greyhat hackathons in the southern US). See my answers <a class='label-red' href='https://github.com/davidheineman/wrek-ctf-2022'>here</a>.</li>
             <li class='arrow'>Interned at <a class='label-orange' href='https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/cloudwatch-application-insights'>AWS CloudWatch Application Insights</a>, built infrastructure to monitor and group telemetry data from processes running on EC2 instances to identify the root causes of problems on customers' AWS infrastructure.</li>
             <li class='arrow'>Helped lead Georgia Tech's <a class='label-blue' href='https://gt-cs-3510.github.io/'>CS 3510, Design and Analysis of Algorithms</a> as a teaching asssistant in Fall '21 and '22.</li>
             <li class='arrow'>Interned at <a class='label-green' href='https://waystar.com/'>Patientco (now part of Waystar)</a>, invented and deployed a <a class='label-yellow' href='https://info.waystar.com/rs/578-UTL-676/images/DataSheet_AdvancedPropensityToPay.pdf'>new sequence-based prediction model</a> to predict when a patient pays their healthcare bill using their payment history (used to customize ~5% of U.S. healthcare bills).</li>
-            <li class='arrow'>Voulenteered with the fake news detection team at <a class='label-purple' href='https://github.com/gt-big-data'>Big Data Big Impact</a> to create a scraper to increase 10x the volume of data which could be queried for real-time predictions.</li>
+            <li class='arrow'>Built an efficient, real-time data ingestion pipeline to 10x the volume of retreival data available to the fake news detection team at <a class='label-purple' href='https://github.com/gt-big-data'>Big Data Big Impact</a>.</li>
             <li class='arrow'>Deployed an <a class='label-red' href='https://github.com/davidheineman/hashtag-master-web-demo'>efficient inference API</a> to allow researchers to segment Twitter hashtags using a <a class='label-yellow' href='https://github.com/mounicam/hashtag_master'>new segmentation model</a> from Georgia Tech's NLP Lab.</li>
-            <li class='arrow'>Developed a <a class='label-blue' href='https://davidheineman.com/comparison-aes.pdf'>state-of-the-art method</a> <b>[</b><a class='label-black' href='https://github.com/davidheineman/comparison-aes'>code</a><b>]</b> for grading student essays using bi-directional LSTMs. (My work has been surpassed post-2020)</li>
+            <li class='arrow'>Developed <a class='label-blue' href='https://davidheineman.com/comparison-aes.pdf'>new methods</a> <b>[</b><a class='label-black' href='https://github.com/davidheineman/comparison-aes'>code</a><b>]</b> for automatically grading student essays.</li>
             <!-- <li class='arrow'>Created a <a class='label-green' href='https://github.com/davidheineman/pi-spotify-player'>Spotify record player</a> using RFID tags and a Raspberry Pi.</li> -->
         </ul>
     </div>
     <div class='section reccomendations'>
         <hr>
-        <h5 class='title'>My recommendations</h6>
-        <p class='tagline'>Wanted to add some personal flair. I've also been trying a few <a class='label-brown' href='https://google.com/maps/d/viewer?mid=1c7utlkztSv79liDa7mCsQIDEZdY_4JY&hl=en&usp=sharing'>coffee shops</a> in Atlanta.</p>
+        <h5 class='title'>Recommendations</h6>
+        <p class='tagline'>A few interesting things I found worth checking out, also see these <a class='label-brown' href='https://google.com/maps/d/viewer?mid=1c7utlkztSv79liDa7mCsQIDEZdY_4JY&hl=en&usp=sharing'>coffee shops in Atlanta</a>.</p>
         <div class='row'>
             <div class='three columns'>
-                <p><strong>Watching...</strong></p>
+                <p><strong>... to read</strong></p>
                 <br>
-                <p>Daisy Jones & The Six</p>
-                <p>The Cohen Brothers</p>
-                <p>Bong Joon-ho</p>
-                <p>Baby Driver</p>
-                <p>Spirited Away</p>
+                <p><a class='label-black' href='https://scottaaronson.blog/?p=40'>Scott Aaronson</a></p>
+                <p><a class='label-green' href='https://paulgraham.com/progbot.html'>Paul Graham</a></p>
+                <p><a class='label-red' href='https://web.stanford.edu/class/cs81n/command.txt'>Neal Stephenson</a></p>
+                <p><a class='label-orange' href='https://colinraffel.com/blog/language-model-development-as-a-new-subfield.html'>Colin Raffel</a></p>
+                <p><a class='label-blue' href='https://www.cs.virginia.edu/~robins/YouAndYourResearch.html'>Richard Hamming</a></p>
                 <br>
             </div>
             <div class='three columns'>
-                <p><strong>Listening to...</strong></p>
+                <p style='color: #fff'><strong>...</strong></p>
+                <br>
+                <p><a class='label-orange' href='https://genlaw.org/explainers/talkin.html'>Katherine Lee et al.</a></p>
+                <p><a class='label-linkedin' href='https://insidehighered.com/sites/default/files/2023-07/ejmr_paper_nber(1).pdf'>Florian Ederer et al.</a></p>
+                <p><a class='label-yellow' href='https://www.aeaweb.org/articles?id=10.1257/aer.20180338'>Nicholas Bloom et al.</a></p>
+                <p><a class='label-green' href='https://danluu.com/butler-lampson-1999'>Dan Luu</a></p>
+                <p><a class='label-purple' href='https://home.ttic.edu/~kgimpel/etc/phd-advice.pdf'>Kevin Gimpel</a></p>
+                <br>
+            </div>
+            <div class='three columns'>
+                <p><strong>... to `clone`</strong></p>
+                <br>
+                <p><a class='label-black' href='https://github.com/pllk/cphb'>pllk/cphb</a></p>
+                <p><a class='label-black' href='https://github.com/jbmouret/matplotlib_for_papers'>jbmouret/matplot</a></p>
+                <p><a class='label-black' href='https://github.com/srush?tab=repositories&q=puzzles'>srush/puzzles</a></p>
+                <p><a class='label-black' href='https://github.com/swisskyrepo/PayloadsAllTheThings'>swisskyrepo/payloads</a></p>
+                <p><a class='label-black' href='https://github.com/soldni/dotfiles'>soldni/dotfiles</a></p>
+                <br>
+            </div>
+            <div class='three columns'>
+                <p><strong>... to listen</strong></p>
                 <br>
                 <p><a class='label-planet-money' href='https://npr.org/sections/money'>Planet Money</a></p>
-                <p><a class='label-black' href='https://retortai.com'>The Retort</a></p>
-                <p>Hobo Johnson</p>
-                <p>MF Doom</p>
-                <p>Pink Floyd</p>
-                <br>
-            </div>
-            <div class='three columns'>
-                <p><strong>Inspired by...</strong></p>
-                <br>
-                <p>Immanuel Kant</p>
-                <p>John Snow</p>
-                <p>Maya Angelou</p>
-                <p><a class='label-blue' href='https://cs.virginia.edu/~robins/YouAndYourResearch.html'>Richard Hamming</a></p>
-                <p>Blaise Pascal</p>
-                <br>
-            </div>
-            <div class='three columns'>
-                <p><strong>Eating at...</strong></p>
-                <br>
-                <p>Momonoki</p>
-                <p>Top Pot Doughnuts</p>
-                <p>The Nook</p>
-                <p>Cypress</p>
-                <p>Waffle House 🧇</p>
+                <p><a class='label-black' href='https://retortai.com'>The Retort</a> / <a class='label-black' href='https://open.spotify.com/show/2sp5EL7s7EqxttxwwoJ3i7'>TWIML</a></p>
+                <p><a class='label-purple' href='https://youtube.com/@allenai/videos'>AI2 Guest Lectures</a></p>
+                <p><a class='label-red' href='https://youtube.com/watch?v=01ohO542NMI&list=PLkvhuSoxwjI_JL7GYcJHK7-EK55t0KYGO'>Mary Wootters</a></p>
+                <p><a class='label-orange' href='https://youtube.com/watch?v=oS8m9fSk-Wk'>Undefined Behavior</a></p>
                 <br>
             </div>
         </div>
         <div class='row'>
             <div class='eight columns'>
-                <p><strong>Flipping through...</strong></p>
+                <p><strong>... to flip through</strong></p>
                 <br>
                 <p><a class='label-purple' href='https://erikdemaine.org/theses/bhearn.pdf'>Games, Puzzles, and Computation</a> by Erik Demaine</p>
-                <p><a class='label-green' href='https://goodreads.com/book/show/4708.The_Beautiful_and_Damned'>The Beautiful and Damned</a> by F. Scott Fitzgerald</p>
                 <p><a class='label-red' href='https://theguardian.com/books/2019/feb/02/age-of-surveillance-capitalism-shoshana-zuboff-review'>The Age of Surveillance Capitalism</a> by Shoshana Zuboff</p>
-                <p><a class='label-blue' href='https://amazon.com/Society-Must-Be-Defended-1975-1976/dp/0312422660'>Society Must be Defended</a> by Michel Foucault</p>
-                <p><a class='label-orange' href='https://goodreads.com/book/show/6759.Infinite_Jest'>Infinite Jest</a> by David Foster Wallace</p>
+                <p><a class='label-green' href='https://amazon.com/Society-Must-Be-Defended-1975-1976/dp/0312422660'>Society Must be Defended</a> by Michel Foucault</p>
+                <p><a class='label-geb' href='https://www.amazon.com/G%C3%B6del-Escher-Bach-Eternal-Golden/dp/0465026567'>Gödel, Escher, Bach</a> by Douglas Hofstadter</p>
                 <br>
             </div>
             <div class='four columns'>
-                <!-- <p><strong>Browsing...</strong></p>
-                <br>
-                <p>Medium</p>
-                <p>The Atlantic</p>
-                <br> -->
             </div>
         </div>
     </div>
     <div class='section footer'>
         <hr>
-        <p>David Heineman<br>Last updated February 2024 (<a class='label-black' href='https://github.com/davidheineman/davidheineman.com'>view source</a>)</p>
+        <p>David Heineman<br>Last updated May 2024 (<a class='label-black' href='https://github.com/davidheineman/davidheineman.com'>view source</a>)</p>
     </div>
 </div>
 
 <script>
-    const zoomImage = document.getElementById('profile-img');
-    const zoomImageContainer = document.getElementById('profile-img-container');
-
-    function handleMouseMove(e) {
-        const { layerX, layerY } = e;
-        const { width, height } = zoomImageContainer.getBoundingClientRect();
-        const x = 100 * (width / 2 - layerX) / width;
-        const y = 100 * (height / 2 - layerY) / height;
-        const scale = 25;
-        zoomImage.style.transform = `scale(${scale}) translate(${x}%, ${y}%)`;
-    }
-
-    function resetZoom() {
-        zoomImage.style.transform = 'scale(1) translate(0%, 0%)';
-    }
-
-    zoomImageContainer.addEventListener('mousemove', handleMouseMove);
-    zoomImage.addEventListener('mouseleave', resetZoom);
-
-    document.querySelectorAll('a').forEach(link => link.setAttribute('target', '_blank'));
+    // Animate the CIFAR profile picture
+    const zoomImage = document.getElementById('profile-img'), 
+          zoomImageContainer = document.getElementById('profile-img-container'), 
+          spinner = document.getElementById('spinner'),
+          profile = document.getElementById('profile'),
+          image = Object.assign(new Image(), { src: '../img/david.jpg' });
+    
+    image.onload = () => {
+        spinner.style.display = 'none';
+        zoomImage.style.display = 'block';
+        zoomImageContainer.addEventListener('mousemove', e => {
+            const {layerX, layerY} = e, {width, height} = zoomImageContainer.getBoundingClientRect(), x = 100 * (width / 2 - layerX) / width, y = 100 * (height / 2 - layerY) / height;
+            zoomImage.style.transform = `scale(25) translate(${x}%, ${y}%)`;
+        });
+        zoomImage.addEventListener('mouseleave', () => zoomImage.style.transform = 'scale(1) translate(0%, 0%)');
+        document.querySelectorAll('a').forEach(link => link.setAttribute('target', '_blank'));
+    };
+    image.onerror = () => {
+        profile.style.display = 'none';
+    };
 </script>

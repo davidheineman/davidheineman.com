@@ -1,1 +1,3 @@
-* !*.david
+* linguist-documentation
+*.david -linguist-documentation
+*.david linguist-language=David
