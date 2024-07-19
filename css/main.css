@@ -108,6 +108,7 @@ a {
 .label-geb { box-shadow: inset 0 -0.05em 0 0 #fff, inset 0 -0.35em 0 0 #fbcbb1; }
 .label-planet-money { box-shadow: inset 0 -0.05em 0 0 #fff, inset 0 -0.35em 0 0 #b3e9bd; }
 .label-multi-prompt { box-shadow: inset 0 -0.05em 0 0 #fff, inset 0 -0.35em 0 0 #c5c5ff; }
+.label-calendly { box-shadow: inset 0 -0.05em 0 0 #fff, inset 0 -0.35em 0 0 #c5c5ff; }
 
 .footer p {
     font-size: 1.3rem;
