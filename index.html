@@ -3,7 +3,7 @@
 <head>
     <title>David Heineman</title>
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'>
-    <meta name='description' content='MS CS @ Stanford'>
+    <meta name='description' content='Pre-doc @ AI2'>
     <meta name='author' content='David Heineman'>
     <link rel='preload' href='fonts/inter-roman.woff2' as='font' type='font/woff2' crossorigin>
     <link rel='preload' href='fonts/inter-italic.woff2' as='font' type='font/woff2' crossorigin>
@@ -25,20 +25,19 @@
         </div>
         <div class='top-desc'>
             <h5 class='header'>David Heineman</h5> <!-- tldr: curl https://davidheineman.com -->
-            <h2 class='name'><strong>Hey! I'm <span class='david-red'>David</span> 👋</h2></strong>
+            <h2 class='name'><strong>Hey! I'm <span class="david-red">David</span> 👋</h2></strong>
             <h4 class='tagline'>
                 <strong>
-                    I'm an recent graduate from <span class='tech-yellow'>Georgia Tech</span> studying <span class='blue'>computer science</span>. 
-                    I work on intelligent systems, language and information networks.
+                    I'm a <span class='ai2-purple'>pre-doctoral young investigator</span> at the <a class='ai2' href="https://allenai.org">Allen Institute for AI</a>, working to improve language model pre-training and evaluation.
                 </strong>
             </h4>
         </div>
     </div>
-    <!-- <div class='modal modal-green'>
-        <p>🌤️ <strong>This summer I am </strong> at the startup accelerator <a class='label-ef' href='https://joinef.com/'>Entrepreneur First</a> working on new tools for LLM evaluation and will be starting my Master's this fall! 🌲</p>
-    </div> -->
+    <div class='modal modal-green'>
+        <p>🍁 <strong>This fall I began</strong> my work as a PYI on the <a class='label-ai2' href='https://allenai.org/olmo'>OLMo team</a> at AI2 in Seattle working on a fully open ecosystem of language models!</p>
+    </div>
     <div class='row links'>
-        <a class='label-red' href='mailto:dhei@stanford.edu?subject=hey'>email</a> 
+        <a class='label-red' href='mailto:davidh@allenai.org?subject=Reaching out'>email</a> 
         <a class='label-orange' href='/david-heineman-resume.pdf'>resume</a>
         <a class='label-linkedin' href='https://linkedin.com/in/davidheineman'>linkedin</a> 
         <a class='label-black' href='https://github.com/davidheineman'>github</a> 
@@ -47,13 +46,14 @@
     </div>
     <div class='section'>
         <hr>
-        <h5 class='title'>About me</h5>
+        <h5 class='title'>Research interests</h5>
         <div class='about-me'>
             <p>
-                I grew up in Marietta, Georgia, where I recently completed my undergrad about half-an-hour south at Georgia Tech 🐝. I was previously at <a class="label-orange" href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/cloudwatch-application-insights">AWS</a> and <a class="label-green" href="https://info.waystar.com/Patientco-Acquisition.html">Patientco</a>, a healthcare / fintech startup. I enjoy reading, hiking, and making homebrew nitrogen cold brew. ☕️ ⛰️
+                I'm interested in understanding language model behavior. This includes fine-grained evaluation of LLM generation <b>[</b><a class='label-black' href='https://aclanthology.org/2023.emnlp-main.211'>1</a>, <a class='label-black' href='https://aclanthology.org/2023.emnlp-demo.30'>2</a><b>]</b>, using measures of behavior to improve text generation <b>[</b><a class='label-black' href='https://arxiv.org/abs/2407.15343'>3</a><b>]</b>, and interpreting language model behavior with existing theories of human cognition <b>[</b><a class='label-black' href='https://arxiv.org/abs/2405.06714'>4</a><b>]</b>. 
+                <!-- <b>[</b><a class='label-black' href='/sop.pdf'>...</a><b>]</b> -->
             </p>
             <p>
-                I'm currently working on evaluation, modeling and deployment of text generation models. Specifically, I've focused on fine-grained evaluation of LLMs and using new quality metrics to improve generation. My aim is to build a rigorous, top-down understanding of LLM behavior by incorporating existing theories of cognition with new analytical tools <b>[</b><a class='label-black' href='/sop.pdf'>...</a><b>]</b>
+                Previously, I completed my undergrad at Georgia Tech 🐝, where I was fortunate to be advised by <a class='label-red' href='https://cocoxu.github.io/'>Prof. Wei Xu</a> and work with <a href='https://yao-dou.github.io/'>Yao Dou</a> and <a href='https://mounicam.github.io/'>Dr. Mounica Maddela</a>. I've also spent a few summers as an intern at <a class="label-orange" href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/cloudwatch-application-insights">AWS</a> and <a class="label-green" href="https://info.waystar.com/Patientco-Acquisition.html">Patientco</a>, a healthcare / fintech startup. I enjoy reading, hiking, and making homebrew nitrogen cold brew. ☕️ ⛰️
             </p>
         </div>
     </div>
@@ -62,7 +62,7 @@
         <h5 class='title'>Publications & Preprints ✒️</h6>
         <p class='pub'>
             <a class='label-multi-prompt' href='https://arxiv.org/abs/2407.15343'>Improving Minimum Bayes Risk Decoding with Multi-Prompt</a> <b>[</b><a class='label-black' href='https://github.com/davidheineman/multi-prompt'>code</a><b>]</b> <br />
-            <p class='author'><b>David Heineman</b>, Yao Dou, Wei Xu <br /> preprint, 2024</p>
+            <p class='author'><b>David Heineman</b>, Yao Dou, Wei Xu <br /> EMNLP, 2024</p>
         </p>
         <p class='pub'>
             <a class='label-orange' href='https://arxiv.org/abs/2405.06714'>Towards a Path Dependent Account of Category Fluency</a> <b>[</b><a class='label-black' href='https://github.com/davidheineman/category-fluency'>code</a><b>]</b> <br />
@@ -86,23 +86,23 @@
         <hr>
         <h5 class='title'>What I've been building 👷</h6>
         <ul class='arrows'>
-            <li class='arrow'>A few ongoing projects: <a class='label-black' href='https://github.com/davidheineman/dl'>pre-training data analysis tools for OLMo</a>, <a class='label-black' href='https://github.com/davidheineman/llama-inference'>easy-to-deploy LLM inference</a>, <a class='label-black' href='https://github.com/davidheineman/mytorch'>a PyTorch re-implementation</a> and <a class='label-black' href='https://huggingface.co/davidheineman/colbert-acl'>a ColBERT retrevial system for ACL papers</a>.</li>
-            <li class='arrow'>Building the <a class='label-green' href='https://thresh.tools'>Thresh 🌾</a> platform, an all-purpose tool for fine-grained text generation evaluation, including an <a href='https://github.com/davidheineman/thresh'>annotation tool builder</a> and integrated <a href='https://pypi.org/project/thresh/'>Python library</a>.</li>
-            <li class='arrow'>Continuing my research with the NLPx lab at Georgia Tech! I'm very fortunate to be advised by <a class='label-red' href='https://cocoxu.github.io/'>Prof. Wei Xu</a> and to work with <a href='https://yao-dou.github.io/'>Yao Dou</a> and <a href='https://mounicam.github.io/'>Dr. Mounica Maddela</a>.</li>
+            <li class='arrow'>Maintaining the <a class='label-green' href='https://thresh.tools'>Thresh 🌾</a> platform, an all-purpose tool for fine-grained text generation evaluation, including an <a href='https://github.com/davidheineman/thresh'>annotation tool builder</a> and integrated <a href='https://pypi.org/project/thresh/'>Python library</a>.</li>
+            <!-- <li class='arrow'>A few ongoing projects: <a class='label-black' href='https://github.com/davidheineman/instruction-quality'>pre-training data analysis tools for OLMo</a>, <a class='label-black' href='https://github.com/davidheineman/llama-inference'>easy-to-deploy LLM inference</a>, <a class='label-black' href='https://github.com/davidheineman/mytorch'>a PyTorch re-implementation</a>.</li> -->
+            <!-- <li class='arrow'>Continuing my research with the NLPx lab at Georgia Tech! I'm very fortunate to be advised by <a class='label-red' href='https://cocoxu.github.io/'>Prof. Wei Xu</a> and to work with <a href='https://yao-dou.github.io/'>Yao Dou</a> and <a href='https://mounicam.github.io/'>Dr. Mounica Maddela</a>.</li> -->
         </ul>
     </div>
-
     <div class='section'>
         <hr>
         <h5 class='title'>My past work 🌳</h6>
         <ul class='arrows'>
-            <li class='arrow'>Wrote a <a class='label-blue' href='https://github.com/davidheineman/cube-search'>LLM-based Rubiks cube solver</a> as a demonstration of explore/exploit behavior for reasoning (Won 2nd place at <a href="https://agihouse.ai">AGI House</a> open source hackathon).</li>
+            <li class='arrow'>Built a <a class='label-red' href='https://acl-search.fly.dev'>search engine</a> <b>[</b><a class='label-black' href='https://github.com/davidheineman/acl-search'>code</a><b>]</b> for ML / NLP conferences, indexed with ColBERT.</li>
+            <li class='arrow'>Wrote a <a class='label-blue' href='https://github.com/davidheineman/cube-search'>LLM-based Rubiks cube solver</a> as a demonstration of explore/exploit behavior for reasoning (🏆 2nd place at <a href="https://agihouse.ai">AGI House</a> open source hackathon).</li>
             <li class='arrow'>Awarded the <a class='label-yellow' href='https://www.cc.gatech.edu/annual-awards-and-honors-past-recipients#:~:text=David Heineman'>GT College of Computing Outstanding Undergraduate Research Award</a> (1 of 3000+ CS students) for my undergradaute thesis work on <a href='.'>fine-grained evaluation of LLMs</a>.</li>
             <li class='arrow'>Designed new programming assignments for <a class='label-purple' href='https://aritter.github.io/CS-4650-au23'>CS 4650, Natural Language Processing</a> as a teaching assistant (sampling algorithms & LLaMA fine-tuning with LoRA).</li>
             <!-- <li class='arrow'>[MBR]</li> -->
             <li class='arrow'>Built an air pollution <a class='label-green' href='https://epdglow.com'>complaint tracker and classifier</a> <b>[</b><a class='label-black' href='https://github.com/davidheineman/epa'>code</a><b>]</b> for the Georgia Environmental Protection Divison (part of a larger collaboration at GT).</li>
             <li class='arrow'>Awarded the <a class='label-yellow' href='https://undergradresearch.gatech.edu/content/presidents-undergraduate-research-awards'>PURA research grant</a> to work on open problems in generation & evaluation (check out my Huggingface <a class='label-orange' href='https://github.com/davidheineman/decoding-vizualizer'>decoding vizualizer extension</a>).</li>
-            <li class='arrow'>Thoughts on <a class='label-red' href='https://davidheineman.com/reasoning-evaluation.pdf'>re-framing reasoning evaluation in LLMs</a> using theories of human cognition.</li>
+            <li class='arrow'>Thoughts on approaching <a class='label-red' href='https://davidheineman.com/reasoning-evaluation.pdf'>reasoning evaluation in LLMs</a> using theories of human cognition.</li>
             <li class='arrow'>Integrated the <a class='label-yellow' href="https://huggingface.co/davidheineman/lens">LENS</a> and <a class='label-yellow' href="https://huggingface.co/davidheineman/lens-salsa">LENS-SALSA</a> models and PyPi library with HuggingFace to let anyone evaluate text simplification with LLMs in 5 lines of Python <b>[</b><a class='label-black' href='https://colab.research.google.com/drive/1rIYrbl5xzL5b5sGUQ6zFBfwlkyIDg12O?usp=sharing'>demo</a><b>]</b>.</li>
             <!-- <li class='arrow'>[SALSA]</li> -->
             <li class='arrow'>Interned in <a class='label-orange' href='https://aws.amazon.com/ec2'>AWS EC2 Enterprise Services</a>, developing a prototype language model service, addressing problems in inference cost and deployment of open-source LLMs.</li>
@@ -120,7 +120,7 @@
     <div class='section reccomendations'>
         <hr>
         <h5 class='title'>Recommendations</h6>
-        <p class='tagline'>A few interesting things I found worth checking out, also see these <a class='label-brown' href='https://google.com/maps/d/viewer?mid=1c7utlkztSv79liDa7mCsQIDEZdY_4JY&hl=en&usp=sharing'>coffee shops in Atlanta</a>.</p>
+        <p class='tagline'>A few interesting corners of the internet I find worth checking out!</p>
         <div class='row'>
             <div class='three columns'>
                 <p><strong>... to read</strong></p>
@@ -155,6 +155,8 @@
             <div class='three columns'>
                 <p><strong>... to listen</strong></p>
                 <br>
+                <!-- PyTorch Developer Podcast -->
+                <!-- Generally Intelligent -->
                 <p><a class='label-planet-money' href='https://npr.org/sections/money'>Planet Money</a></p>
                 <p><a class='label-black' href='https://retortai.com'>The Retort</a> / <a class='label-black' href='https://open.spotify.com/show/2sp5EL7s7EqxttxwwoJ3i7'>TWIML</a></p>
                 <p><a class='label-purple' href='https://youtube.com/@allenai/videos'>AI2 Guest Lectures</a></p>
@@ -176,10 +178,11 @@
             <div class='four columns'>
             </div>
         </div>
+        <p class='tagline'>I also enjoy trying new coffee shops. Here's <a class='label-brown' href='https://google.com/maps/d/viewer?mid=1c7utlkztSv79liDa7mCsQIDEZdY_4JY&hl=en&usp=sharing'>50+ recommendations across Atlanta</a>, that I visited during my undergrad.</p>
     </div>
     <div class='section footer'>
         <hr>
-        <p>David Heineman<br>Last updated June 2024 <b>[</b><a class='label-black' href='https://github.com/davidheineman/davidheineman.com'>view source</a><b>]</b></p>
+        <p>David Heineman<br>Last updated September 2024 <b>[</b><a class='label-black' href='https://github.com/davidheineman/davidheineman.com'>view source</a><b>]</b></p>
     </div>
 </div>
 
