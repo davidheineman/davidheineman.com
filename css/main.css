@@ -113,6 +113,7 @@ a {
 .label-green { box-shadow: inset 0 -0.05em 0 0 #fff, inset 0 -0.35em 0 0 #bafdc3; }
 .label-blue { box-shadow: inset 0 -0.05em 0 0 #fff, inset 0 -0.35em 0 0 #bae6fd; }
 .label-purple { box-shadow: inset 0 -0.05em 0 0 #fff, inset 0 -0.35em 0 0 #ddbafd; }
+.label-pink { box-shadow: inset 0 -0.05em 0 0 #fff, inset 0 -0.35em 0 0 #efbbf7; }
 .label-brown { box-shadow: inset 0 -0.05em 0 0 #fff, inset 0 -0.35em 0 0 #d5c0a9; }
 .label-black { box-shadow: inset 0 -0.05em 0 0 #fff, inset 0 -0.35em 0 0 #c4c4c4; }
 .label-twitter { box-shadow: inset 0 -0.05em 0 0 #fff, inset 0 -0.35em 0 0 #aed9f1; }
