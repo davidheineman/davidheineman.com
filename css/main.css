@@ -295,3 +295,8 @@ a {
         transform: translate(-50%, -50%) rotate(360deg);
     }
 }
+
+.rick {
+    opacity: 0.5;
+    margin: 0;
+}
