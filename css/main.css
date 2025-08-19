@@ -214,13 +214,13 @@ a {
 }
 
 .author {
-    font-size: var(--l-font-size);
+    font-size: var(--m-font-size);
     line-height: 1.3em;
     margin-bottom: -0.4em;
 }
 
 .pub {
-    font-size: var(--l-2-font-size);
+    font-size: var(--l-font-size);
     line-height: 1.4em;
     margin-bottom: 0.2em;
 }
