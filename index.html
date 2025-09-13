@@ -223,28 +223,51 @@
 
 <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
 <script>
-    // Animate the CIFAR profile picture
-    const zoomImage = document.getElementById('profile-img'), 
-          zoomImageContainer = document.getElementById('profile-img-container'), 
-          spinner = document.getElementById('spinner'),
-          profile = document.getElementById('profile'),
-          image = Object.assign(new Image(), { src: '../img/david.jpg' });
-    
-    image.onload = () => {
-        spinner.style.display = 'none';
-        zoomImage.style.display = 'block';
-        zoomImageContainer.addEventListener('mousemove', e => {
-            const {layerX, layerY} = e, {width, height} = zoomImageContainer.getBoundingClientRect(), x = 100 * (width / 2 - layerX) / width, y = 100 * (height / 2 - layerY) / height;
-            zoomImage.style.transform = `scale(25) translate(${x}%, ${y}%)`;
-        });
-        zoomImage.addEventListener('mouseleave', () => zoomImage.style.transform = 'scale(1) translate(0%, 0%)');
-        document.querySelectorAll('a').forEach(link => {
-            if (!link.getAttribute('href').includes('#')) {
-                link.setAttribute('target', '_blank');
-            }
-        });
-    };
-    image.onerror = () => {
-        profile.style.display = 'none';
-    };
+// Animate the CIFAR profile picture
+const zoomImage          = document.getElementById('profile-img');
+const zoomImageContainer = document.getElementById('profile-img-container');
+const spinner            = document.getElementById('spinner');
+const profile            = document.getElementById('profile');
+
+const image = new Image();
+const ZOOM = 20;
+
+image.onload = () => {
+  // Hide spinner, show the image
+  if (spinner) spinner.style.display = 'none';
+  if (zoomImage) zoomImage.style.display = 'block';
+
+  // Pan + zoom effect
+  zoomImageContainer.addEventListener('mousemove', (e) => {
+    const rect = zoomImageContainer.getBoundingClientRect();
+    const relX = (e.clientX - rect.left) / rect.width;   // 0 → 1
+    const relY = (e.clientY - rect.top) / rect.height;
+
+    const moveX = (0.5 - relX) * 100;
+    const moveY = (0.5 - relY) * 100;
+
+    zoomImage.style.transformOrigin = 'center center';
+    zoomImage.style.transform = `scale(${ZOOM}) translate(${moveX}%, ${moveY}%)`;
+  });
+
+  zoomImageContainer.addEventListener('mouseleave', () => {
+    zoomImage.style.transform = 'scale(1) translate(0,0)';
+  });
+
+  // Make external links open in new tab safely
+  document.querySelectorAll('a').forEach((link) => {
+    const href = link.getAttribute('href');
+    if (href && !href.startsWith('#')) {
+      link.setAttribute('target', '_blank');
+      link.setAttribute('rel', 'noopener');
+    }
+  });
+};
+
+image.onerror = () => {
+  if (profile) profile.style.display = 'none';
+};
+
+// Attach handlers *before* setting src
+image.src = '../img/david.jpg';
 </script>
