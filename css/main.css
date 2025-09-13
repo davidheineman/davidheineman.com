@@ -168,6 +168,9 @@ a {
     padding-bottom: 10px;
     padding-top: 10px;
     line-height: 2.8rem;
+
+    font-size: 1.15em;
+    /* line-height: 2.5rem; */
 }
 
 .modal-green {
