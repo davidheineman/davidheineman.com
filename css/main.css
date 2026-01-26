@@ -190,6 +190,11 @@ a {
     box-shadow: -5px 0px 0px 0px #fd6e6e;
 }
 
+.modal-blue {
+    background-color: rgba(110, 203, 253, 0.2);
+    box-shadow: -5px 0px 0px 0px #6ecbfd;
+}
+
 .reccomendations .row p {
     line-height: 1.7em;
 }
