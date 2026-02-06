@@ -230,9 +230,44 @@ a {
 }
 
 .pub {
+    margin-bottom: 1.6em;
+}
+
+.pub-title {
     font-size: var(--l-font-size);
     line-height: 1.4em;
     margin-bottom: 0.2em;
+}
+
+.pub-toggle {
+    font-size: var(--l-font-size);
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing: 0;
+}
+
+.pub-toggle a {
+    cursor: pointer;
+    color: #838383;
+    transition: color 0.15s ease;
+}
+
+.pub-toggle a:hover {
+    color: #222;
+}
+
+.pub-toggle a.toggle-active {
+    color: #222;
+    font-weight: 600;
+}
+
+/* Hide "all" publications by default */
+.pub.pub-all {
+    display: none;
+}
+
+.show-all .pub.pub-all {
+    display: block;
 }
 
 .header-row {
