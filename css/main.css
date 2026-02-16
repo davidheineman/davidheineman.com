@@ -344,3 +344,14 @@ a {
     opacity: 0.5;
     margin: 0;
 }
+
+#teapot-container {
+    width: 100%;
+    height: 220px;
+}
+
+#teapots { 
+    display: block; 
+    width: 100%; 
+    height: 100%; 
+}

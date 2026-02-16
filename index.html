@@ -64,6 +64,10 @@
         <hr>
         <h5 class='title'>Publications & Preprints <span class='pub-toggle'>[<a id='toggle-selected' class='toggle-active' href='#'>selected</a>, <a id='toggle-all' href='#'>all</a>]</span></h5>
         <div class='pub pub-selected'>
+            <p class='pub-title'><a class='label-purple' href='https://arxiv.org/abs/2602.12237'>Olmix: A Framework for Data Mixing Throughout LM Development</a> <b>[</b><a class='label-black' href='https://allenai.org/blog/olmix'>blog</a>, <a class='label-black' href='https://github.com/allenai/olmix'>code</a>, <a class='label-black' href='https://huggingface.co/datasets/allenai/olmix'>mix weights</a><b>]</b></p>
+            <p class='author'>Mayee F. Chen, Tyler Murray, <b>David Heineman</b>, Matt Jordan, Hannaneh Hajishirzi, Christopher Ré, Luca Soldaini, Kyle Lo<br /> preprint, 2026</p>
+        </div>
+        <div class='pub pub-selected'>
             <p class='pub-title'><a class='label-ai2' href='https://arxiv.org/abs/2512.13961'>Olmo 3</a> <b>[</b><a class='label-black' href='https://allenai.org/blog/olmo3'>blog</a>, <a class='label-black' href='https://github.com/allenai/OLMo-core'>code</a>, <a class='label-black' href='https://huggingface.co/collections/allenai/olmo-3'>models</a>, <a class='label-black' href='https://huggingface.co/collections/allenai/olmo-3-pre-training'>data</a><b>]</b></p>
             <p class='author'>Olmo Team (incl. <b>David Heineman</b>)<br /> technical report, 2025</p>
         </div>
@@ -77,7 +81,7 @@
         </div>
         <div class='pub pub-selected'>
             <p class='pub-title'><a class='label-blue' href='https://arxiv.org/abs/2509.11106'>Fluid Language Model Benchmarking</a> <b>[</b><a class='label-black' href='https://github.com/allenai/fluid-benchmarking'>code</a>, <a class='label-black' href='https://huggingface.co/datasets/allenai/fluid-benchmarking'>models</a><b>]</b></p>
-            <p class='author'>Valentin Hofmann, <b>David Heineman</b>, Ian Magnusson, Kyle Lo, Jesse Dodge, Maarten Sap, Pang Wei Koh, Chun Wang, Hannaneh Hajishirzi, Noah A. Smith.<br /> COLM, 2025 <span class="span-notable">(Oral, Top 5%)</span></p>
+            <p class='author'>Valentin Hofmann, <b>David Heineman</b>, Ian Magnusson, Kyle Lo, Jesse Dodge, Maarten Sap, Pang Wei Koh, Chun Wang, Hannaneh Hajishirzi, Noah A. Smith<br /> COLM, 2025 <span class="span-notable">(Oral, Top 5%)</span></p>
         </div>
         <div class='pub pub-selected'>
             <p class='pub-title'><a class='label-pink' href='https://arxiv.org/abs/2412.04403'>Establishing Task Scaling Laws via Compute-Efficient Model Ladders</a> <b>[</b><a class='label-black' href='https://github.com/allenai/OLMo-ladder'>code</a><b>]</b></p>
@@ -224,82 +228,26 @@
     </div>
     <div class='section footer'>
         <hr>
-        <p>
+        <p style="margin-bottom: 0;">
             David Heineman<br>
-            Last updated November 2025 
+            Last updated February 2026 
             <b>[</b><a class='label-black' href='https://github.com/davidheineman/davidheineman.com'>view source</a><b>]</b>
             <br><br>
             <code class="rick">curl -s https://davidheineman.com/rick | bash</code>
         </p>
+        <div id="teapot-container">
+          <canvas id="teapots"></canvas>
+        </div>
     </div>
 </div>
 
-<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-<script>
-// Animate the CIFAR profile picture
-const zoomImage          = document.getElementById('profile-img');
-const zoomImageContainer = document.getElementById('profile-img-container');
-const spinner            = document.getElementById('spinner');
-const profile            = document.getElementById('profile');
-
-const image = new Image();
-const ZOOM = 20;
-
-image.onload = () => {
-  // Hide spinner, show the image
-  if (spinner) spinner.style.display = 'none';
-  if (zoomImage) zoomImage.style.display = 'block';
-
-  // Pan + zoom effect
-  zoomImageContainer.addEventListener('mousemove', (e) => {
-    const rect = zoomImageContainer.getBoundingClientRect();
-    const relX = (e.clientX - rect.left) / rect.width;   // 0 → 1
-    const relY = (e.clientY - rect.top) / rect.height;
-
-    const moveX = (0.5 - relX) * 100;
-    const moveY = (0.5 - relY) * 100;
-
-    zoomImage.style.transformOrigin = 'center center';
-    zoomImage.style.transform = `scale(${ZOOM}) translate(${moveX}%, ${moveY}%)`;
-  });
-
-  zoomImageContainer.addEventListener('mouseleave', () => {
-    zoomImage.style.transform = 'scale(1) translate(0,0)';
-  });
-
-  // Make external links open in new tab safely
-  document.querySelectorAll('a').forEach((link) => {
-    const href = link.getAttribute('href');
-    if (href && !href.startsWith('#')) {
-      link.setAttribute('target', '_blank');
-      link.setAttribute('rel', 'noopener');
+<script type="importmap">
+  {
+    "imports": {
+      "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+      "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
     }
-  });
-};
-
-image.onerror = () => {
-  if (profile) profile.style.display = 'none';
-};
-
-// Attach handlers *before* setting src
-image.src = '../img/david.jpg';
-
-// Publication toggle
-const toggleSelected = document.getElementById('toggle-selected');
-const toggleAll = document.getElementById('toggle-all');
-const pubSection = toggleSelected.closest('.section');
-
-toggleSelected.addEventListener('click', (e) => {
-  e.preventDefault();
-  pubSection.classList.remove('show-all');
-  toggleSelected.classList.add('toggle-active');
-  toggleAll.classList.remove('toggle-active');
-});
-
-toggleAll.addEventListener('click', (e) => {
-  e.preventDefault();
-  pubSection.classList.add('show-all');
-  toggleAll.classList.add('toggle-active');
-  toggleSelected.classList.remove('toggle-active');
-});
+  }
 </script>
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<script type="text/javascript" src="js/main.js"></script>
