@@ -128,6 +128,8 @@ a {
 .label-calendly { box-shadow: inset 0 -0.05em 0 0 #fff, inset 0 -0.35em 0 0 #c5c5ff; }
 .label-ai2 { box-shadow: inset 0 -0.05em 0 0 #fff, inset 0 -0.35em 0 0 #ffc8e2; }
 
+.label-footnote:hover { color: #0284c7; }
+
 .span-notable { color: #E34474; font-weight: 550; }
 
 .footer p {
