@@ -6,11 +6,13 @@ const canvas = document.getElementById('teapots');
 const scene = new THREE.Scene();
 scene.background = new THREE.Color(0xffffff);
 
-const width = container.clientWidth;
-const height = container.clientHeight;
+const size = 105;
+const width = size+30; // slight padding
+const height = size;
 const camera = new THREE.PerspectiveCamera(30, width / height, 0.1, 1000);
-camera.position.set(2, 5, 12);
+camera.position.set(2, 5, 6);
 camera.lookAt(0.2, 1.5, 0);
+// camera.rotateZ(-0.2);
 
 const renderer = new THREE.WebGLRenderer({ canvas, antialias: true });
 renderer.setSize(width, height);
@@ -31,18 +33,22 @@ const redCeramicMat = new THREE.MeshPhysicalMaterial({
 });
 
 const loader = new STLLoader();
-
 // STL coords: X [-54,84], Y [-54,54], Z [0,167] (Z is up)
 // Three.js: Y is up
 // Scale: 0.02 → 167mm ≈ 3.34 units
 const SCALE = 0.02;
 
+// Rotation pivot
+const PIVOT_X = -0.3;
+const PIVOT_Y = 0;
+const PIVOT_Z = 0;
+
 const TEAPOT_SPACING = 2.8;
-const TEAPOT_COUNT = 5;
-const AUTO_ROTATE_SPEED = 0.25;
-const PUSH_SENSITIVITY = 0.012;   // how much mouse speed adds to spin (rad per pixel)
-const SPIN_FRICTION = 2.5;       // how fast the pushed spin decays (per second)
-const CLICK_PUSH_IMPULSE = 14;   // rad/s added on click (momentum, then friction slows it)
+const TEAPOT_COUNT = 1;
+const AUTO_ROTATE_SPEED = 0.5;
+const PUSH_SENSITIVITY = 0.3; // how much mouse speed adds to spin (rad per pixel)
+const SPIN_FRICTION = 2; // how fast the pushed spin decays (per second)
+const CLICK_PUSH_IMPULSE = 14; // rad/s added on click (momentum, then friction slows it)
 
 const teapotGroups = [];
 const raycaster = new THREE.Raycaster();
@@ -54,12 +60,12 @@ function prepareGeometry(geometry) {
     geometry.computeVertexNormals();
     geometry.scale(SCALE, SCALE, SCALE);
     geometry.rotateX(-Math.PI / 2);
-    geometry.translate(-15 * SCALE, 0, 0);
+    geometry.translate(-15 * SCALE - PIVOT_X, -PIVOT_Y, -PIVOT_Z);
 }
 
 function addTeapotAt(bodyGeo, topGeo, x, index) {
     const group = new THREE.Group();
-    group.position.set(x, 0, 0);
+    group.position.set(x + PIVOT_X, PIVOT_Y, PIVOT_Z);
     group.rotation.y = (index / TEAPOT_COUNT) * Math.PI * 2;
     group.userData.spinVelocity = 0;   // extra rad/s from push/click, decays over time
 
@@ -153,11 +159,9 @@ scene.add(rimLight);
 
 // --- Resize
 window.addEventListener('resize', () => {
-    const w = container.clientWidth;
-    const h = container.clientHeight;
-    camera.aspect = w / h;
+    camera.aspect = width / height;
     camera.updateProjectionMatrix();
-    renderer.setSize(w, h);
+    renderer.setSize(width, height);
 });
 
 // --- Mouse: push teapots (mouse speed adds spin); click = 360° spin
