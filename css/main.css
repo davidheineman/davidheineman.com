@@ -357,3 +357,7 @@ a {
 #teapots {
     display: block;
 }
+
+.container {
+    max-width: 700px;
+}
