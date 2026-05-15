@@ -356,6 +356,7 @@ a {
 
 #teapots {
     display: block;
+    margin-right: -40px;
 }
 
 .container {
