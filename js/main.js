@@ -65,6 +65,19 @@ toggleAll.addEventListener('click', (e) => {
   toggleSelected.classList.remove('toggle-active');
 });
 
+// "past work" more/less toggle
+const togglePast = document.getElementById('toggle-past');
+if (togglePast) {
+  const pastSection = togglePast.closest('.past-work');
+  togglePast.addEventListener('click', (e) => {
+    e.preventDefault();
+    const expanded = pastSection.classList.toggle('show-more-past');
+    togglePast.innerHTML = expanded
+      ? 'less <span class="past-toggle-arrow">&#x2191;</span>'
+      : 'more <span class="past-toggle-arrow">&#x2193;</span>';
+  });
+}
+
 // Lazy load teapot (at 50% scroll)
 (() => {
 let loaded = false;

@@ -272,6 +272,38 @@ a {
     display: block;
 }
 
+/* more/less toggle (in "past work") */
+.past-work .past-li {
+    display: none;
+}
+
+.past-work.show-more-past .past-li {
+    display: list-item;
+}
+
+.past-toggle-li {
+    list-style: none;
+    text-indent: 0;
+    margin-top: 0.4em;
+}
+
+.arrows .past-toggle-li:before {
+    content: none;
+}
+
+a.past-toggle {
+    cursor: pointer;
+    color: #222;
+    font-family: Inter var;
+    font-weight: 500;
+    font-size: var(--l-font-size);
+    box-shadow: inset 0 -0.05em 0 0 #fff, inset 0 -0.35em 0 0 #c4c4c4;
+}
+
+.past-toggle-arrow {
+    font-size: 0.9em;
+}
+
 .header-row {
     display: flex;
     flex-wrap: wrap;
